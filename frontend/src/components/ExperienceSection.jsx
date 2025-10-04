@@ -8,7 +8,7 @@ const ExperienceSection = () => {
   const { experience, achievements } = portfolioData;
 
   return (
-    <section id="experience" className="py-20 bg-white dark:bg-gray-900 relative">
+    <section id="experience" className="py-20 bg-gray-800 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
