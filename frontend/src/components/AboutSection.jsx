@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, Sparkles, Rocket, Brain } from 'lucide-react';
+import { CheckCircle, Sparkles, Rocket, Brain, Code } from 'lucide-react';
 import { Card } from './ui/card';
 import { portfolioData } from '../mock';
 
