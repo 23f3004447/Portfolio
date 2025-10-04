@@ -76,6 +76,9 @@ function App() {
           <ArrowUp className="h-6 w-6" />
         </Button>
       )}
+      
+      {/* Toast Notifications */}
+      <Toaster />
     </div>
   );
 }
