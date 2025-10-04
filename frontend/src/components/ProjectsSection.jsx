@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, Github, Calendar, Tag, Star, Rocket, Monitor } from 'lucide-react';
+import { ExternalLink, Github, Calendar, Tag, Star, Rocket, Monitor, Globe, Gamepad2, Cloud } from 'lucide-react';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
