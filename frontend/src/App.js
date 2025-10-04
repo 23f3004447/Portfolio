@@ -10,6 +10,7 @@ import ProjectsSection from './components/ProjectsSection';
 import ExperienceSection from './components/ExperienceSection';
 import ContactSection from './components/ContactSection';
 import { Button } from './components/ui/button';
+import { Toaster } from './components/ui/toaster';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
