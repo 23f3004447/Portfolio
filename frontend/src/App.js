@@ -44,12 +44,24 @@ function App() {
 
   // Apply dark mode class to document (always dark by default)
   useEffect(() => {
+    // Force dark theme on initial load
+    document.documentElement.classList.add('dark');
+    document.body.classList.add('dark');
+    
     if (darkMode) {
       document.documentElement.classList.add('dark');
+      document.body.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
+      document.body.classList.remove('dark');
     }
   }, [darkMode]);
+
+  // Force dark theme on component mount
+  useEffect(() => {
+    document.documentElement.classList.add('dark');
+    document.body.classList.add('dark');
+  }, []);
 
   return (
     <div className="App min-h-screen bg-gray-900 text-white transition-colors duration-300">
