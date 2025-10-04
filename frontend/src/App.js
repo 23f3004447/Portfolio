@@ -13,9 +13,10 @@ import { Button } from './components/ui/button';
 import { Toaster } from './components/ui/toaster';
 
 function App() {
+  // Set dark mode as default
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem('darkMode');
-    return saved ? JSON.parse(saved) : false;
+    return saved ? JSON.parse(saved) : true; // Default to true for dark theme
   });
   const [showBackToTop, setShowBackToTop] = useState(false);
 
@@ -41,7 +42,7 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Apply dark mode class to document
+  // Apply dark mode class to document (always dark by default)
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
@@ -51,7 +52,7 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="App min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+    <div className="App min-h-screen bg-gray-900 text-white transition-colors duration-300">
       {/* Navigation */}
       <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       
@@ -66,11 +67,11 @@ function App() {
         <ContactSection />
       </main>
 
-      {/* Back to Top Button */}
+      {/* Enhanced Back to Top Button */}
       {showBackToTop && (
         <Button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-2xl hover:shadow-xl transform hover:scale-110 transition-all duration-300"
+          className="fixed bottom-8 right-8 z-50 p-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white shadow-2xl hover:shadow-cyan-500/50 transform hover:scale-110 transition-all duration-300 border border-cyan-400/30"
           aria-label="Back to top"
         >
           <ArrowUp className="h-6 w-6" />
