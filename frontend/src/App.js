@@ -64,7 +64,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App min-h-screen bg-gray-900 text-white transition-colors duration-300">
+    <div className="App min-h-screen bg-gray-900 text-white transition-colors duration-300" style={{backgroundColor: '#111827', color: '#ffffff'}}>
       {/* Navigation */}
       <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       
