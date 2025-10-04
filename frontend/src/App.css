@@ -91,13 +91,23 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Force dark theme for body */
+body {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+}
+
+html {
+  background-color: #111827 !important;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #374151;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -107,11 +117,6 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(135deg, #2563eb, #4f46e5);
-}
-
-/* Dark mode scrollbar */
-.dark ::-webkit-scrollbar-track {
-  background: #374151;
 }
 
 /* Focus Styles */
